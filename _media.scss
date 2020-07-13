@@ -1,0 +1,121 @@
+@media(min-width:950px){
+
+  .nav-bar{
+    h1{
+      padding-right: 60%;
+    }
+
+  }
+  .content{
+    margin: 100px auto;
+    width: 100%;
+    text-align: center;
+    
+
+    h1{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      padding-right: 250px;
+      font-weight: bold;
+      font-size-adjust: inherit;
+    }
+    p{
+      font-weight: bold;
+      padding-right: 250px;
+    }
+    .btn{
+      position: relative;
+      right: 130px;
+    }
+    
+
+  }
+
+  .section-2{
+    .card{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr ;
+      grid-gap: 5%;
+
+      .card-1{
+        
+        img{
+          height: 50%;
+        }
+      }
+      
+      
+    }
+  }
+  .section-3{
+    h1{
+      text-align: center;
+      width: 100%;
+      padding-left: 400px;
+    }
+    p{
+      width: 100%;
+      padding-left: 230px;
+      text-align: center;
+    }
+    button{
+      margin-left: 45%;
+    }
+  }
+  .section-4{
+    .grid-4{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    i{
+      display: block;
+      padding: 0 60px;
+    }
+    h1{
+      margin: 20px 70px;
+    }
+    
+  }
+  .section-5{
+    
+    .grid-2{
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5%;
+    }
+    p{
+      
+      display: inline;
+      text-align: center;
+    }
+    h1{
+      
+      display: inline;
+      text-align: center;
+    }
+
+  }
+  .section-6{
+
+    form{
+
+      input{
+        width: 100%;
+        margin-left: 100px;
+      }
+      button{
+        margin-left: 450px;
+      }
+
+    }
+    
+    a{
+      position: relative;
+      left: 450px;
+      
+    }
+
+  }
+  
+}

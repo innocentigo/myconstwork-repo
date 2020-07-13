@@ -1,0 +1,83 @@
+@media(max-width:360px){
+  .nav-bar{
+    
+    h1{
+      margin-left: 110px;
+      font-size: 15px;
+    }
+    .menu{
+      margin-right: 70px;
+      font-size: 10px;
+    }
+  }
+  
+
+  .content{
+    
+  
+   h1{
+      margin: auto;
+     
+    }
+    p{
+      margin: auto;
+     
+    }
+    .btn{
+      
+      
+    }
+  }
+  .section-1{
+    h1{
+      padding-right: 50px;
+    }
+    p{
+      padding-right: 40px;
+    }
+
+  }
+  .section-2{
+    .card{
+      padding-right: 30px;
+    }
+
+  }
+  .section-4{
+    h1{
+      width: 104%;
+      font-size: 17px;
+    }
+    p{
+      font-size: 12px;
+      
+    }
+    
+  }
+  .section-5{
+    img{
+      width: 80%;
+    }
+    .wrap{
+      h2{
+        padding-left: 80px;
+      }
+    }
+  }
+  .section-6{
+    form{
+     input{
+       width: 10%;
+       padding: 3px;
+       font-size: 5px;
+
+      button{
+       margin-right: 40px;
+      }
+     }
+
+   }
+  }
+ 
+  
+}

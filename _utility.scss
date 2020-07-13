@@ -1,0 +1,14 @@
+$first-color: blue;
+$secound-color:black;
+$third-color:white;
+
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.color{
+  color: $first-color;
+}

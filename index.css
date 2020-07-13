@@ -1,0 +1,456 @@
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.color {
+  color: blue;
+}
+
+@media (min-width: 950px) {
+  .nav-bar h1 {
+    padding-right: 60%;
+  }
+  .content {
+    margin: 100px auto;
+    width: 100%;
+    text-align: center;
+  }
+  .content h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-right: 250px;
+    font-weight: bold;
+    font-size-adjust: inherit;
+  }
+  .content p {
+    font-weight: bold;
+    padding-right: 250px;
+  }
+  .content .btn {
+    position: relative;
+    right: 130px;
+  }
+  .section-2 .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5%;
+  }
+  .section-2 .card .card-1 img {
+    height: 50%;
+  }
+  .section-3 h1 {
+    text-align: center;
+    width: 100%;
+    padding-left: 400px;
+  }
+  .section-3 p {
+    width: 100%;
+    padding-left: 230px;
+    text-align: center;
+  }
+  .section-3 button {
+    margin-left: 45%;
+  }
+  .section-4 .grid-4 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .section-4 i {
+    display: block;
+    padding: 0 60px;
+  }
+  .section-4 h1 {
+    margin: 20px 70px;
+  }
+  .section-5 .grid-2 {
+    margin-top: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
+  }
+  .section-5 p {
+    display: inline;
+    text-align: center;
+  }
+  .section-5 h1 {
+    display: inline;
+    text-align: center;
+  }
+  .section-6 form input {
+    width: 100%;
+    margin-left: 100px;
+  }
+  .section-6 form button {
+    margin-left: 450px;
+  }
+  .section-6 a {
+    position: relative;
+    left: 450px;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav-bar h1 {
+    margin-left: 110px;
+    font-size: 15px;
+  }
+  .nav-bar .menu {
+    margin-right: 70px;
+    font-size: 10px;
+  }
+  .content h1 {
+    margin: auto;
+  }
+  .content p {
+    margin: auto;
+  }
+  .section-1 h1 {
+    padding-right: 50px;
+  }
+  .section-1 p {
+    padding-right: 40px;
+  }
+  .section-2 .card {
+    padding-right: 30px;
+  }
+  .section-4 h1 {
+    width: 104%;
+    font-size: 17px;
+  }
+  .section-4 p {
+    font-size: 12px;
+  }
+  .section-5 img {
+    width: 80%;
+  }
+  .section-5 .wrap h2 {
+    padding-left: 80px;
+  }
+  .section-6 form input {
+    width: 10%;
+    padding: 3px;
+    font-size: 5px;
+  }
+  .section-6 form input button {
+    margin-right: 40px;
+  }
+}
+
+body, html {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+body .nav-bar, html .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100px;
+  background: black;
+  color: white;
+}
+
+body .nav-bar .menu, html .nav-bar .menu {
+  color: white;
+  font-size: 30px;
+}
+
+body .nav-bar h1, html .nav-bar h1 {
+  margin-right: 70px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body .nav-bar .menu, html .nav-bar .menu {
+  margin-left: 70px;
+}
+
+body .side-nav, html .side-nav {
+  background: black;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 0;
+  height: 100%;
+  overflow-x: hidden;
+  padding-top: 60px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  display: inline-block;
+  opacity: .9;
+  border-radius: 15px;
+}
+
+body .side-nav h1, html .side-nav h1 {
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: relative;
+  bottom: 40px;
+  left: 5px;
+}
+
+body .side-nav .x-btn, html .side-nav .x-btn {
+  font-size: 30px;
+  position: relative;
+  left: 200px;
+  bottom: 110px;
+}
+
+body .side-nav .x-btn .name, html .side-nav .x-btn .name {
+  margin: 4rem;
+}
+
+body .side-nav a, html .side-nav a {
+  display: block;
+  padding: 20px 5px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 140px;
+  font-weight: bold;
+}
+
+body .side-nav form .btn, html .side-nav form .btn {
+  position: relative;
+  bottom: 120px;
+  left: 50px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+body .side-nav a:hover, html .side-nav a:hover {
+  color: blue;
+}
+
+body #content .showcase, html #content .showcase {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #content .showcase::after, html #content .showcase::after {
+  content: '';
+  background-image: url("drawing.jpg");
+  height: 400px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+body #content .content, html #content .content {
+  position: absolute;
+  left: 130px;
+}
+
+body #content .content h1, html #content .content h1 {
+  font-size: 30px;
+  font-weight: 30px;
+}
+
+body #content .content p, html #content .content p {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+body #content .content .btn, html #content .content .btn {
+  padding: 20px 30px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  border: none;
+  background: blue;
+  border-radius: 10px;
+  color: white;
+}
+
+body #content .content .btn:hover, html #content .content .btn:hover {
+  color: black;
+}
+
+body #content .section-1, html #content .section-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #content .section-1 .common, body #content .section-1 h1, body html #content .section-1 h1, html body #content .section-1 h1, body #content .section-1 p, body html #content .section-1 p, html body #content .section-1 p, body #content .section-1 .section-2 .card-1 h1, body .section-2 .card-1 #content .section-1 h1, html .section-2 .card-1 body #content .section-1 h1, body #content .section-1 .section-2 .card-1 p, body .section-2 .card-1 #content .section-1 p, html .section-2 .card-1 body #content .section-1 p, html #content .section-1 .common, html body #content .section-1 h1, body html #content .section-1 h1, html #content .section-1 h1, html body #content .section-1 p, body html #content .section-1 p, html #content .section-1 p, body .section-2 .card-1 html #content .section-1 h1, html #content .section-1 .section-2 .card-1 h1, html .section-2 .card-1 #content .section-1 h1, body .section-2 .card-1 html #content .section-1 p, html #content .section-1 .section-2 .card-1 p, html .section-2 .card-1 #content .section-1 p {
+  margin: 20px auto;
+  text-align: center;
+  width: 60%;
+  line-height: 27px;
+}
+
+body .section-2 .card-1, html .section-2 .card-1 {
+  margin-top: 20px;
+  border: black solid 0.5px;
+  -webkit-box-shadow: black 0px 5px 5px 0px;
+          box-shadow: black 0px 5px 5px 0px;
+  display: inline-block;
+}
+
+body .section-2 .card-1 img, html .section-2 .card-1 img {
+  height: 100%;
+  width: 100%;
+}
+
+body .section-2 .card-1 .common, body .section-2 .card-1 #content .section-1 h1, body #content .section-1 .section-2 .card-1 h1, html #content .section-1 body .section-2 .card-1 h1, body .section-2 .card-1 #content .section-1 p, body #content .section-1 .section-2 .card-1 p, html #content .section-1 body .section-2 .card-1 p, body .section-2 .card-1 h1, body html .section-2 .card-1 h1, html body .section-2 .card-1 h1, body .section-2 .card-1 p, body html .section-2 .card-1 p, html body .section-2 .card-1 p, html .section-2 .card-1 .common, body #content .section-1 html .section-2 .card-1 h1, html .section-2 .card-1 #content .section-1 h1, html #content .section-1 .section-2 .card-1 h1, body #content .section-1 html .section-2 .card-1 p, html .section-2 .card-1 #content .section-1 p, html #content .section-1 .section-2 .card-1 p, html body .section-2 .card-1 h1, body html .section-2 .card-1 h1, html .section-2 .card-1 h1, html body .section-2 .card-1 p, body html .section-2 .card-1 p, html .section-2 .card-1 p {
+  margin: 20px auto;
+  text-align: center;
+  width: 40%;
+  line-height: 20px;
+}
+
+body .section-3, html .section-3 {
+  width: 100%;
+  position: relative;
+  height: 50%;
+  background-image: url("yellow.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 30px;
+  opacity: .9;
+}
+
+body .section-3 h1, html .section-3 h1 {
+  font-size: 30px;
+  width: 40%;
+  margin-bottom: 30px;
+}
+
+body .section-3 p, html .section-3 p {
+  font-size: 15px;
+  line-height: 19px;
+  width: 60%;
+}
+
+body .section-3 button, html .section-3 button {
+  background: blue;
+  padding: 10px 40px;
+  margin-bottom: 35px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+body .section-4, html .section-4 {
+  margin-top: 30px;
+  background: black;
+  color: white;
+  opacity: .9;
+}
+
+body .section-4 i, html .section-4 i {
+  font-size: 50px;
+  color: blue;
+  padding-right: 40px;
+}
+
+body .section-4 p, html .section-4 p {
+  width: 50%;
+  padding-left: 100px;
+  line-height: 20px;
+}
+
+body .section-4 h1, html .section-4 h1 {
+  padding-left: 10px;
+}
+
+body .section-5, html .section-5 {
+  background: black;
+  color: white;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .section-5 img, html .section-5 img {
+  padding: 20px;
+}
+
+body .section-5 h1, html .section-5 h1 {
+  width: 40%;
+  font-size: 30px;
+  margin: auto;
+}
+
+body .section-5 h2, html .section-5 h2 {
+  color: blue;
+  font-size: 35px;
+  padding-left: 120px;
+}
+
+body .section-5 p, html .section-5 p {
+  width: 40%;
+  text-align: left;
+  margin: auto;
+  padding: 0;
+  line-height: 22px;
+  font-size: 13px;
+}
+
+body .section-6, html .section-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .section-6 h2:nth-child(1), html .section-6 h2:nth-child(1) {
+  margin: 10px auto;
+  text-align: center;
+  width: 80%;
+  font-size: 25px;
+}
+
+body .section-6 h2:nth-child(2), html .section-6 h2:nth-child(2) {
+  text-align: center;
+  font-size: 27px;
+}
+
+body .section-6 form input, html .section-6 form input {
+  width: 80%;
+  padding: 20px 30px;
+  font-size: 20px;
+  -webkit-box-shadow: 0px 0px 3px 1px black;
+          box-shadow: 0px 0px 3px 1px black;
+}
+
+body .section-6 form button, html .section-6 form button {
+  position: relative;
+  left: 150px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 15px 50px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+body .section-6 i, html .section-6 i {
+  font-size: 20px;
+  position: relative;
+  left: 160px;
+  margin-top: 20px;
+  padding: 0px 12px;
+  color: red;
+}
+/*# sourceMappingURL=index.css.map */
